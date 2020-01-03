@@ -1,7 +1,9 @@
 package com.gqz;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @ClassName HelloWorldControll
@@ -11,11 +13,22 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version
  **/
 
-@RestController
-@RequestMapping("/")
+@Controller
 public class HelloWorldController {
-    @RequestMapping("hello")
+
+    /**
+     *  返回JSON数据乱码
+     *  解决方法：produces = "text/html;charset=UTF-8"
+     */
+    @ResponseBody
+    @RequestMapping(value = "mvc",produces = "text/html;charset=UTF-8")
     public String sayHello() {
-        return "Hello World";
+        return "Spring MVC作为前端控制器！";
+    }
+
+    @RequestMapping("hello")
+    public String print(Model model){
+        model.addAttribute("msg","Hello This is Spring Web Project");
+        return "index";
     }
 }

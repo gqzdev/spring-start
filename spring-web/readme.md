@@ -1,0 +1,2 @@
+使用Spring MVC的xml配置
+也可以使用JavaConfig（全注解配置方式）
