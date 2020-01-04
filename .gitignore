@@ -1,15 +1,18 @@
 .idea/
 out/
 classes/
+!**/src/main/**
+!**/src/test/**
 
-# IDEA artifacts and output dirs
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
 *.ipr
-*.iws
-.idea
+
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
 
-target/*
+target/
 /spring-start.iml
