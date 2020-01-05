@@ -12,4 +12,5 @@ atlassian-ide-plugin.xml
 .gradletasknamecache
 
 target/*
+../target/
 /spring-start.iml
