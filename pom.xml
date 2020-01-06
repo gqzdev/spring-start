@@ -12,6 +12,7 @@
     <modules>
         <module>spring-hello</module>
         <module>spring-web</module>
+        <module>spring-allconfig</module>
     </modules>
 
 
@@ -137,6 +138,14 @@
             <version>3.2.5.RELEASE</version>
             <scope>compile</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
+
 
     </dependencies>
 
