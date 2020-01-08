@@ -1,13 +1,7 @@
 package com.gqz;
 
-import com.gqz.config.AppConfig;
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
-
-import java.lang.reflect.AnnotatedArrayType;
 
 /**
  * @ClassName Test
@@ -36,7 +30,7 @@ public class Test {
 
     public static void main(String[] args){
         Test test = new Test();
-        //test.testAnnotation();
+        //gqz.testAnnotation();
         System.out.println("===========================");
         test.testXML();
     }

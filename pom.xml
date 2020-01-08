@@ -13,6 +13,7 @@
         <module>spring-hello</module>
         <module>spring-web</module>
         <module>spring-allconfig</module>
+        <module>spring-aop</module>
     </modules>
 
 

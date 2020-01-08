@@ -12,14 +12,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloController {
-
     @ResponseBody
     @GetMapping("/hello")
     public String hello() {
-        return "hello";
+        return "hello,JSON 格式";
     }
 
-    @GetMapping("/helloPage")
+    /**
+     * 返回hello.jsp视图
+     */
+    @GetMapping("/hello2")
     public String hello2(){
         return "hello";
     }
