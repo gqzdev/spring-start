@@ -5,9 +5,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @Author: zhouguanya
- * @Date: 2018/8/250 19:27
- * @Description: xml aop测试
+ * description: xml aop测试
+ * @Author：ganquanzhong
+ * @Date： 2020/1/10 23:26
  */
 public class SpringAopAnnotationDemo {
 
