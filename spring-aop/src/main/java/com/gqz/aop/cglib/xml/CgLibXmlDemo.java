@@ -4,9 +4,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @Author zhouguanya
- * @Date 2018/8/27
- * @Description cglib aop测试
+ * description: cglib aop测试
+ * @Author：ganquanzhong
+ * @Date： 2020/1/12 23:13
  */
 public class CgLibXmlDemo {
     public static void main(String[] args) throws InterruptedException {
@@ -15,6 +15,7 @@ public class CgLibXmlDemo {
         Desk desk = (Desk) applicationContext.getBean("desk");
         Table table = (Table) applicationContext.getBean("table");
         desk.location();
+
         System.out.println("-----分割线-----");
         Thread.sleep(10000);
         table.location();

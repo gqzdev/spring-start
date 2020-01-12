@@ -13,6 +13,8 @@
     <bean id="banana" class="com.gqz.aop.jdk.xml.Banana"></bean>
     <!--fruitHandler-->
     <bean id="fruitHandler" class="com.gqz.aop.jdk.xml.FruitHandler"></bean>
-    <!-- 开启aop注解方式，此步骤不能少 -->
+
+
+    <!--aspect当使用注解的方式 开启aop注解方式，此步骤不能少 -->
     <aop:aspectj-autoproxy/>
 </beans>

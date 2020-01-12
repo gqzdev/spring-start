@@ -1,9 +1,9 @@
 package com.gqz.aop.cglib.xml;
 
 /**
- * @Author zhouguanya
- * @Date 2018/8/27
- * @Description 课桌
+ * description: 课桌
+ * @Author：ganquanzhong
+ * @Date： 2020/1/12 23:12
  */
 public class Desk {
     /**
@@ -12,6 +12,6 @@ public class Desk {
     public void location () throws InterruptedException {
         //模拟耗时，方便观察输出结果
         Thread.sleep(10000);
-        System.out.println("我是课桌，我被放在教室中");
+        System.out.println("我是课桌desk，我被放在教室中");
     }
 }

@@ -4,9 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @Author: zhouguanya
- * @Date: 2018/8/27 19:500
- * @Description: 横切关注点,打印开始和结束的时间
+ * description: 横切关注点,打印开始和结束的时间
+ * @Author：ganquanzhong
+ * @Date： 2020/1/12 23:12
  */
 public class CglibXmlAspect {
 
