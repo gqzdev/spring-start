@@ -5,11 +5,12 @@ import com.gqz.aspectj.expression.FoodFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * @Author zhouguanya
- * @Date 2018/9/100
- * @Description 测试args()
- */
+
+ /**
+  * @description:  测试args()
+  * @Author: ganquanzhong
+  * @Date:  2020/1/13 17:56
+  */
 public class AspectJExpressionDemo {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-chapter3-aspectjargsexpression.xml");

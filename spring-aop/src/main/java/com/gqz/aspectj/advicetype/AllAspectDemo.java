@@ -3,11 +3,12 @@ package com.gqz.aspectj.advicetype;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * @Author: zhouguanya
- * @Date: 2018/9/1
- * @Description: 测试各种类型的增强
- */
+
+ /**
+  * @description:  测试各种类型的增强-adviceType
+  * @Author: ganquanzhong
+  * @Date:  2020/1/13 17:43
+  */
 public class AllAspectDemo {
 
     public static void main(String[] args) {

@@ -4,11 +4,11 @@ import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
-/**
- * @Author zhouguanya
- * @Date 2018/9/100
- * @Description args和@args切面逻辑
- */
+ /**
+  * @description:  args和@args切面逻辑
+  * @Author: ganquanzhong
+  * @Date:  2020/1/13 17:56
+  */
 @Aspect
 public class ArgsAspect {
 

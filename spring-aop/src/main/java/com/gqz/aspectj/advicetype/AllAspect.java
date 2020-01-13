@@ -4,11 +4,12 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
-/**
- * @Author: zhouguanya
- * @Date: 2018/9/1
- * @Description: 包含各种增强类型的切面
- */
+ /**
+  * @description: 包含各种增强类型的切面
+  *  Pointcut \ Before \ Around \ AfterReturning \AfterThrowing \ After
+  * @Author: ganquanzhong
+  * @Date:  2020/1/13 17:33
+  */
 @Component
 @Aspect
 public class AllAspect {
