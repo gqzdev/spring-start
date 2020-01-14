@@ -1,9 +1,9 @@
 package com.gqz.aspectj.expression;
 
 /**
- * @Author zhouguanya
- * @Date 2018/9/100
- * @Description 工厂接口
+ * description: 工厂接口
+ * @Author：ganquanzhong
+ * @Date： 2020/1/14 23:53
  */
 public interface Factory {
     /**
