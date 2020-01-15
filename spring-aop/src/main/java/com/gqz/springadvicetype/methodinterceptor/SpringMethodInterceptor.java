@@ -5,9 +5,9 @@ import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.stereotype.Service;
 
 /**
- * @Author zhouguanya
- * @Date 2018/9/2
- * @Description 环绕增强
+ * description: AroundAdvice环绕增强
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:17
  */
 @Service
 public class SpringMethodInterceptor implements MethodInterceptor {

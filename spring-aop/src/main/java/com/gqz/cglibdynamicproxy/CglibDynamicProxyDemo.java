@@ -3,9 +3,9 @@ package com.gqz.cglibdynamicproxy;
 import org.springframework.cglib.proxy.Enhancer;
 
 /**
- * @Author zhouguanya
- * @Date 2018/8/21
- * @Description 测试Cglib
+ * description:  测试Cglib
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:19
  */
 public class CglibDynamicProxyDemo {
 

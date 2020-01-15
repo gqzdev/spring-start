@@ -12,6 +12,7 @@ public class CgLibAnnotationDemo {
     public static void main(String[] args) throws InterruptedException {
         ApplicationContext applicationContext
                 = new ClassPathXmlApplicationContext("classpath:spring-chapter3-annotationcglibaop.xml");
+
         Desk desk = (Desk) applicationContext.getBean("desk");
         Table table = (Table) applicationContext.getBean("table");
         desk.location();

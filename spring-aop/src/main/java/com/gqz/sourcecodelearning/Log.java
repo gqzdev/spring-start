@@ -1,9 +1,9 @@
 package com.gqz.sourcecodelearning;
 
 /**
- * @Author zhouguanya
- * @Date 2018/100/3
- * @Description 定义接口
+ * description:  Log接口
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:14
  */
 public interface Log {
 

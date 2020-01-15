@@ -1,9 +1,10 @@
 package com.gqz.jdkdynamicproxy;
 
+
 /**
- * @Author zhouguanya
- * @Date 2018/8/20
- * @Description 测试
+ * description: 测试JDK动态代理
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:11
  */
 public class JDKDynamicProxyDemo {
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
 package com.gqz.jdkdynamicproxy;
 
 /**
- * @Author zhouguanya
- * @Date 2018/8/20
- * @Description 接口实现类
+ * description: Animal接口实现类Dog---被代理的对象
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:21
  */
 public class Dog implements Animal {
     /**

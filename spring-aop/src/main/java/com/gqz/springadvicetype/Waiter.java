@@ -5,10 +5,11 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 /**
- * @Author zhouguanya
- * @Date 2018/9/2
- * @Description 服务员类
+ * description:  服务员类
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 22:52
  */
 @Component
 public class Waiter {

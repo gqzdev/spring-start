@@ -7,9 +7,9 @@ import org.springframework.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * @Author zhouguanya
- * @Date 2018/8/21
- * @Description 实现MethodInterceptor接口
+ * description:  实现MethodInterceptor接口
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:19
  */
 public class CatMethodInterceptor implements MethodInterceptor {
 

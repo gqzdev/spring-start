@@ -4,9 +4,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @Author zhouguanya
- * @Date 2018/100/3
- * @Description 测试
+ * description: 测试
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:12
  */
 public class AopSourceCodeLearningDemo {
     public static void main(String[] args) {
