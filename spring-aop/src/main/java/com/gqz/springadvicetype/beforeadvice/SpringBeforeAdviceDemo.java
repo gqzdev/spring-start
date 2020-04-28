@@ -6,9 +6,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @Author zhouguanya
- * @Date 2018/9/2
- * @Description Spring前置增强测试
+ * description:  Spring  @Before前置增强测试
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 22:51
  */
 public class SpringBeforeAdviceDemo {
 
@@ -16,6 +16,7 @@ public class SpringBeforeAdviceDemo {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-chapter3-springaoptype.xml");
         Waiter waiter = (Waiter) context.getBean("waiter");
         SpringBeforeAdvice advice = (SpringBeforeAdvice) context.getBean("springBeforeAdvice");
+
         //Spring提供的代理工厂
         ProxyFactory pf = new ProxyFactory();
         //设置代理目标

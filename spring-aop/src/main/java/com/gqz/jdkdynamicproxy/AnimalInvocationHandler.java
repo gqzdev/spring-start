@@ -5,9 +5,9 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * @Author zhouguanya
- * @Date 2018/8/20
- * @Description 动态代理类
+ * description:  动态代理类  实现InvocationHandler接口，重写invoke方法
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:22
  */
 public class AnimalInvocationHandler implements InvocationHandler {
     /**

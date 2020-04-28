@@ -13,6 +13,8 @@ import org.springframework.stereotype.Component;
 public class PhoneFactory implements Factory {
     /**
      * 制作产品的方法
+     *
+     * @Log为自定义的注解，  并且给@Log添加了AfterReturning的aspectj增强
      */
     @Override
     @Log

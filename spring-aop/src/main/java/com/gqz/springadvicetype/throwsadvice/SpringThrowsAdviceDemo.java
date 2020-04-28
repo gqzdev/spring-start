@@ -4,11 +4,10 @@ import com.gqz.springadvicetype.Waiter;
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 /**
- * @Author zhouguanya
- * @Date 2018/9/2
- * @Description Spring异常抛出增强测试
+ * description: Spring异常抛出增强测试
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:18
  */
 public class SpringThrowsAdviceDemo {
 

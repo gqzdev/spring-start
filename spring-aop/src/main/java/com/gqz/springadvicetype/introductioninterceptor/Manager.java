@@ -2,10 +2,11 @@ package com.gqz.springadvicetype.introductioninterceptor;
 
 import org.springframework.aop.support.DelegatingIntroductionInterceptor;
 
+
 /**
- * @Author zhouguanya
- * @Date 2018/9/2
- * @Description 经理类
+ * description:  manage经理类
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:16
  */
 public class Manager extends DelegatingIntroductionInterceptor implements Management {
 

@@ -1,9 +1,9 @@
 package com.gqz.springadvicetype.introductioninterceptor;
 
 /**
- * @Author zhouguanya
- * @Date 2018/9/2
- * @Description
+ * description:  新增一个接口到指定的类中
+ * @Author：ganquanzhong
+ * @Date： 2020/1/15 23:15
  */
 public interface Management {
     /**
