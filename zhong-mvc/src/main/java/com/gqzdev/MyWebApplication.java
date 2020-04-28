@@ -1,6 +1,8 @@
-package com.gqzdev.app;
+package com.gqzdev;
 
+import com.gqzdev.app.AppConfig;
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
@@ -23,16 +25,23 @@ public class MyWebApplication implements WebApplicationInitializer {
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-       // 1. init Spring Context
-        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.register(AppConfig.class);
+        // 1. init Spring Context
+        System.out.println("初始化------spring容器");
+        AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
+        applicationContext.register(AppConfig.class);
+        //无参构造方法，需要手动refresh
+        applicationContext.refresh();
 
-        // 1. init Spring Servlet
-        DispatcherServlet dispatcherServlet = new DispatcherServlet();
 
+        // 添加Listener
+        servletContext.addListener(new ContextLoaderListener());
+
+        // 2. init Spring Servlet
+        System.out.println("初始化------servlet容器");
+        DispatcherServlet servlet = new DispatcherServlet();
         //添加到容器 ServletContext
-        ServletRegistration.Dynamic registration = servletContext.addServlet("dispatcherServlet", dispatcherServlet);
 
+        ServletRegistration.Dynamic registration = servletContext.addServlet("as",servlet);
         registration.addMapping("/");
         registration.setLoadOnStartup(1);
     }

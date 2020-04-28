@@ -16,6 +16,7 @@
         <module>spring-aop</module>
         <module>spring-mybatis</module>
         <module>zhong-mvc</module>
+        <module>zhong-springmvc1</module>
     </modules>
 
 
@@ -44,6 +45,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
