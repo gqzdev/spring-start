@@ -2,7 +2,6 @@ package com.gqzdev;
 
 import com.gqzdev.app.AppConfig;
 import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
@@ -34,15 +33,18 @@ public class MyWebApplication implements WebApplicationInitializer {
 
 
         // 添加Listener
-        servletContext.addListener(new ContextLoaderListener());
+        //servletContext.addListener(new ContextLoaderListener());
 
         // 2. init Spring Servlet
         System.out.println("初始化------servlet容器");
         DispatcherServlet servlet = new DispatcherServlet();
         //添加到容器 ServletContext
-
         ServletRegistration.Dynamic registration = servletContext.addServlet("as",servlet);
+
+        System.out.println(registration.getName());
+
         registration.addMapping("/");
+        registration.getName();
         registration.setLoadOnStartup(1);
     }
 }
