@@ -18,13 +18,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class IndexController {
 
-    /*@ResponseBody
+    @ResponseBody
     @RequestMapping("/user")
-    public User index(){
+    public User getUser(){
         return new User(231232,"spring mvc","china","001");
-    }*/
+    }
 
-    @RequestMapping("index1")
+    @RequestMapping("/index1")
     public String index(){
         System.out.println("init---------->>>>>>>>>>");
         return "index";
