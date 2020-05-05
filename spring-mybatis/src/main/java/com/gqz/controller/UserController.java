@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
-    UserMapper userMapper;
+    private UserMapper userMapper;
 
     @RequestMapping("/{uid}")
-    public User getUser(){
-       return  userMapper.select();
+    public User getUser(Integer uid){
+       return  userMapper.select(uid);
     }
 }

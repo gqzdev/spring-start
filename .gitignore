@@ -14,3 +14,6 @@ atlassian-ide-plugin.xml
 target/*
 */target
 /spring-start.iml
+
+*/mvnw.cmd
+*/mvnw

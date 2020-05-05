@@ -1,10 +1,7 @@
 package com.gqz.mapper;
 
 import com.gqz.bean.User;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 /**
  * @ClassName User
@@ -28,4 +25,7 @@ public interface UserMapper {
     public void update(User user);
 
     public User getUserByUid();
+
+    @Select("select * from user where uid =#{uid}")
+    User select(Integer uid);
 }
