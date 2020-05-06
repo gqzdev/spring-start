@@ -1,13 +1,15 @@
 package com.gqzdev.app;
 
 
+import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
-import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -31,10 +33,23 @@ public class AppConfig implements WebMvcConfigurer {
     /**
      * 配置Spring MVC视图解析器
      */
-    @Override
+/*    @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
-        registry.jsp("/",".jsp");
+        registry.jsp("/page/",".jsp");
+    }*/
+
+    @Bean
+    public InternalResourceViewResolver internalResourceViewResolver(){
+        InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
+        internalResourceViewResolver.setPrefix("/");
+        internalResourceViewResolver.setSuffix(".jsp");
+        return internalResourceViewResolver;
     }
 
 
+    @Override
+    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+        FastJsonHttpMessageConverter converter = new FastJsonHttpMessageConverter();
+
+    }
 }

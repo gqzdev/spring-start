@@ -1,4 +1,5 @@
-一、使用Spring MVC的xml配置
+一、使用Spring MVC的xml配置 module 【spring-web】
+    
 spring和springMVC的整合：
 1、不整合：需要将spring所管理的内容都交给springMVC管理，这样会造成业务逻辑混乱
 2、整合：spring的配置文件什么时候加载？怎么加载？
@@ -19,4 +20,5 @@ spring:Root WebApplicationContext: startup date [Fri Jun 21 11:45:00 CST 2019]; 
 springMVC:WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Jun 21 11:47:42 CST 2019]; 
 parent: Root WebApplicationContext
 
-二、也可以使用JavaConfig（全注解配置方式）
+二、也可以使用JavaConfig（全注解配置方式）module 【spring-allconfig】
+    

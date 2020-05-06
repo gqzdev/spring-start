@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-
 /**
  * @ClassName IndexController
  * @Description
@@ -24,10 +23,10 @@ public class IndexController {
         return new User(231232,"spring mvc","china","001");
     }
 
-    @RequestMapping("/index1")
+    @RequestMapping("/hello")
     public String index(){
         System.out.println("init---------->>>>>>>>>>");
-        return "index";
+        return "hello";
     }
 
 }

@@ -5,13 +5,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <!--配置自动扫描-->
+    <!--配置自动扫描  只扫描controller -->
     <!--也可以使用JavaConfig配置，配合@ComponentScan注解-->
-    <context:component-scan base-package="com.gqz"></context:component-scan>
+    <context:component-scan base-package="com.gqz.controller" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
 
     <!--配置视图解析器 把handler方法返回的值解析为实际的物理视图-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value=""></property>
-        <property name="suffix" value=".jsp"></property>
+        <property name="prefix" value=""/>
+        <property name="suffix" value=".jsp"/>
     </bean>
 </beans>

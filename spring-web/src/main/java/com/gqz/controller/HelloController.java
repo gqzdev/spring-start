@@ -1,4 +1,4 @@
-package com.gqz;
+package com.gqz.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
  **/
 
 @Controller
-public class HelloWorldController {
+public class HelloController {
 
     /**
      *  返回JSON数据乱码
      *  解决方法：produces = "text/html;charset=UTF-8"
      */
     @ResponseBody
-    @RequestMapping(value = "mvc",produces = "text/html;charset=UTF-8")
+    @RequestMapping(value = "mvc", produces = "text/html;charset=UTF-8")
     public String sayHello() {
         return "Spring MVC作为前端控制器！";
     }

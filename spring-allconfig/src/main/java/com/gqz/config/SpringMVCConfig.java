@@ -14,24 +14,27 @@ import java.util.List;
 
 /**
  * @ClassName: SpringMVCConfig
+ *             SpringMVC中主要配置 视图解析器、JSON 解析、文件上传……等等
  * @author: ganquanzhong
  * @date: 2020/1/6 13:23
  */
 @Configuration
-@ComponentScan(basePackages = "com.gqz",useDefaultFilters = false,includeFilters = {
-        @ComponentScan.Filter(type = FilterType.ANNOTATION,classes = Controller.class)})
+@ComponentScan(basePackages = "com.gqz",
+        useDefaultFilters = false,
+        includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION,
+                classes = Controller.class)})
 public class SpringMVCConfig extends WebMvcConfigurationSupport {
-    /**
-     *  SpringMVC中主要配置 视图解析器、JSON 解析、文件上传……等等
-     */
+
     /**
      * 通过很简单的配置使得 Spring MVC 有能力处理对静态资源进行处理。
-     * 在 Spring MVC 中，资源的查找、处理使用的是责任链设计模式（Filter Chain）
-     *
+     * 在 Spring MVC 中，资源的查找、处理使用的是   责任链设计模式（Filter Chain）
+     * *
      *  重写 addResourceHandlers 方法，在这个方法中配置静态资源过滤，
      *  这里我将静态资源放在 resources 目录下，所以资源位置是 classpath:/ ，当然，资源也可以放在 webapp 目录下，此时只需要修改配置中的资源位置即可。
      *  如果采用 Java 来配置 SSM 环境，一般来说，可以不必使用 webapp 目录，除非要使用 JSP 做页面模板，否则可以忽略 webapp 目录。
      */
+
+
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/js/**")

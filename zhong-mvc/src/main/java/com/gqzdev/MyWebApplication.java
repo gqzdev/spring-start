@@ -2,10 +2,8 @@ package com.gqzdev;
 
 import com.gqzdev.app.AppConfig;
 import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -18,6 +16,7 @@ import javax.servlet.ServletRegistration;
  * @author: ganquanzhong
  * @date: 2020/4/28 17:37
  */
+
 public class MyWebApplication implements WebApplicationInitializer {
     /**
      *  1. init Spring Context
@@ -31,7 +30,7 @@ public class MyWebApplication implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext ac = new AnnotationConfigWebApplicationContext();
         ac.register(AppConfig.class);
         //无参构造方法，需要手动refresh
-        ac.refresh();
+        //ac.refresh();
 
 
         // 管理applicationContext的lifecycle   添加Listener
