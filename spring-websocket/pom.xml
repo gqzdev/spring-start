@@ -12,4 +12,10 @@
     <artifactId>spring-websocket</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.</groupId>
+            <artifactId>spring-webso</artifactId>
+        </dependency>
+    </dependencies>
 </project>
