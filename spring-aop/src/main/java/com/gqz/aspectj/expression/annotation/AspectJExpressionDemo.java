@@ -15,6 +15,7 @@ public class AspectJExpressionDemo {
 
         Factory foodFactory = (Factory)context.getBean("foodFactory");
         foodFactory.make();
+
         System.out.println("-----分割线-----");
 
         Factory phoneFactory = (Factory) context.getBean("phoneFactory");

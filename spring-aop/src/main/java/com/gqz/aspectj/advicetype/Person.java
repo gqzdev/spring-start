@@ -14,6 +14,6 @@ public class Person {
      * 说话的方法
      */
     public void say() {
-        System.out.println("Hello gqzdev,this is spring5");
+        System.out.println("Hello gqzdev,学习使用AOP");
     }
 }

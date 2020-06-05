@@ -14,6 +14,8 @@ public class AllAspectDemo {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-chapter3-aoptype.xml");
         Person person = (Person) context.getBean("person");
+
+        //调用 被aop处理的方法时。  会通过代理去实现
         person.say();
     }
 }

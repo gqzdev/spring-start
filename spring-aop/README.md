@@ -6,5 +6,6 @@ Spring AOP的实现有两种方式:基于JDK和基于CGLIB
 AOP前置知识
     1.JDK动态代理：
         创建代理类，动态代理类（必须）需要实现InvocationHandler接口
+    
     2.CGLIB动态代理
         需要实现MethodInterceptor接口，重写intercept()方法。          
